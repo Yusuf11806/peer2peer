@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer2Peer - Connect. Learn. Grow.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="nav-container">
+        <button class="theme-toggle" type="button" onclick="toggleDarkMode()" aria-label="Switch to dark mode">
+            Dark mode
+        </button>
+
+        <a href="#" class="brand" onclick="showHome(); return false;">
+            <span class="brand-mark">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+            </span>
+            Peer2Peer
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#" onclick="navigateToSection('how-it-works'); return false;">How It Works</a>
+            <a href="#" onclick="navigateToSection('features'); return false;">Features</a>
+            <a href="#" onclick="navigateToSection('about'); return false;">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="nav-login" onclick="showAuth('login')">Sign In</button>
+            <button class="nav-cta" onclick="showAuth('register')">
+                Get Started
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+
+<main id="homePage">
+
+    <section class="hero">
+        <div class="hero-container">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    Built for students, by students
+                </div>
+
+                <h1>
+                    Find the right<br>
+                    <span>peer to learn with.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Peer2Peer helps students discover study partners based on
+                    subjects, skills, schedules, and learning preferences.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" onclick="showAuth('register')">
+                        Find Your Peer
+                        
+                    </button>
+
+                    <a class="secondary-btn" href="#" onclick="navigateToSection('how-it-works'); return false;">
+                        See How It Works
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+
+                    <div class="avatar-stack">
+                        <span>Y</span>
+                        <span>A</span>
+                        <span>R</span>
+                        <span>+</span>
+                    </div>
+
+                    <p>
+                        <strong>Connect with your campus community.</strong>
+                        <br>
+                        Study together. Share knowledge. Grow together.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="visual-glow"></div>
+
+                <div class="dashboard-preview">
+
+                    <div class="preview-top">
+
+                        <div>
+                            <small>YOUR PEER NETWORK</small>
+                            <h3>Find your study match</h3>
+                        </div>
+
+                        <span class="preview-status">Active</span>
+
+                    </div>
+
+
+                    <div class="preview-search">
+                        
+                        <span>Search by subject or skill...</span>
+                    </div>
+
+
+                    <div class="preview-match">
+
+                        <div class="preview-avatar">
+                            A
+                        </div>
+
+                        <div class="preview-person">
+                            <strong>Alex Pratama</strong>
+
+                            <small>
+                                Computer Science &middot; Web Development
+                            </small>
+
+                            <div class="preview-tags">
+                                <span>Java</span>
+                                <span>Web Dev</span>
+                                <span>Mon PM</span>
+                            </div>
+                        </div>
+
+                        <div class="match-percent">
+                            92%
+                            <small>match</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-match">
+
+                        <div class="preview-avatar alt">
+                            S
+                        </div>
+
+                        <div class="preview-person">
+
+                            <strong>Sarah Wijaya</strong>
+
+                            <small>
+                                Information Systems &middot; Data Structures
+                            </small>
+
+                            <div class="preview-tags">
+                                <span>Python</span>
+                                <span>Data</span>
+                                <span>Tue AM</span>
+                            </div>
+
+                        </div>
+
+                        <div class="match-percent">
+                            86%
+                            <small>match</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-bottom">
+                        <span>24 peers online</span>
+                        <span>Smart matching enabled</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="trust-strip">
+
+        <p>ONE PLACE TO FIND PEOPLE WHO</p>
+
+        <div>
+            <span>Study Together</span>
+            <span>Share Skills</span>
+            <span>Build Connections</span>
+            <span>Help Each Other</span>
+        </div>
+
+    </section>
+
+
+    
+
+    <section class="section" id="how-it-works">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                From studying alone
+                <br>
+                to learning together.
+            </h2>
+
+            <p>
+                Getting started takes only a few simple steps.
+            </p>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+            <div class="step-card">
+
+                <span class="step-number">01</span>
+
+                <h3>
+                    Create your profile
+                </h3>
+
+                <p>
+                    Tell us your major, subjects, skills, study mode,
+                    and when you are available.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span class="step-number">02</span>
+
+                <h3>
+                    Discover your peers
+                </h3>
+
+                <p>
+                    Peer2Peer compares your learning preferences
+                    and shows compatible students.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <span class="step-number">03</span>
+
+                <h3>
+                    Connect & learn
+                </h3>
+
+                <p>
+                    Message your match and study together online
+                    or meet at your campus.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+    <section class="feature-section" id="features">
+
+        <div class="feature-container">
+
+            <div class="feature-copy">
+
+                <span class="section-label">
+                    MENTORS AND STUDY FRIENDS
+                </span>
+
+                <h2>
+                    Support from a mentor. Progress with peers.
+                </h2>
+
+                <p>
+                    Meet your BINUS-assigned student mentor and find study friends who share your subjects, goals, and schedule.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <h3>
+                        Smart Matching
+                    </h3>
+
+                    <p>
+                        Match students using shared subjects,
+                        majors, study modes, and availability.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Schedule Based
+                    </h3>
+
+                    <p>
+                        See overlapping study windows so it is
+                        easier to find a time that works.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Online or Onsite
+                    </h3>
+
+                    <p>
+                        Choose remote study sessions or meet
+                        your peers around campus.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Peer Connection
+                    </h3>
+
+                    <p>
+                        Start conversations directly with
+                        students you want to learn with.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+    <section class="cta-section" id="about">
+
+        <div class="cta-card">
+
+            <div>
+
+                <span class="section-label">
+                    START YOUR JOURNEY
+                </span>
+
+                <h2>
+                    Your mentor and study circle
+                    <br>
+                    start here.
+                </h2>
+
+                <p>
+                    Create your student profile to connect with study friends and see your BINUS mentor in one place.
+                </p>
+
+            </div>
+
+            <button
+                class="primary-btn light"
+                onclick="showAuth('register')">
+
+                Get Started
+                
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
+<main id="authPage" class="app-page" style="display:none;">
+
+    <div class="auth-page">
+
+        <div class="auth-intro">
+
+            <button
+                class="back-home"
+                onclick="showHome()">
+
+                 Back to Peer2Peer
+
+            </button>
+
+
+            <div class="auth-brand">
+
+                <span>
+                    Peer2Peer
+                </span>
+
+            </div>
+
+
+            <h1>
+                Learn better,
+                <br>
+                <span>together.</span>
+            </h1>
+
+
+            <p>
+                Connect with students who share your subjects,
+                skills, and goals.
+            </p>
+
+        </div>
+
+
+        <div class="auth-card">
+
+            <div class="auth-tabs">
+
+                <button
+                    id="tabLoginBtn"
+                    class="auth-tab-btn active"
+                    onclick="switchAuthMode('login')">
+
+                    Sign In
+
+                </button>
+
+                <button
+                    id="tabRegisterBtn"
+                    class="auth-tab-btn"
+                    onclick="switchAuthMode('register')">
+
+                    Create Account
+
+                </button>
+
+            </div>
+
+
+            <div class="auth-card-heading">
+
+                <h2 id="authTitle">
+                    Welcome back
+                </h2>
+
+                <p id="authSubtitle">
+                    Sign in to access your peer network.
+                </p>
+
+            </div>
+
+
+            <form id="authForm">
+
+                <div class="form-group">
+
+                    <label for="authEmail">
+                        Academic Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="authEmail"
+                        class="form-control"
+                        placeholder="you@binus.ac.id"
+                        required>
+
+                </div>
+
+
+                <div class="form-group signup-only is-hidden">
+
+                    <label for="authNim">
+                        Student ID (NIM)
+                    </label>
+
+                    <input
+                        type="text"
+                        id="authNim"
+                        class="form-control"
+                        inputmode="numeric"
+                        autocomplete="off"
+                        placeholder="Enter your BINUS NIM">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="authPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="authPassword"
+                        class="form-control"
+                        placeholder="At least 8 characters, 1 uppercase + 1 number"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="authSubmitBtn"
+                    class="full-btn">
+
+                    Access Dashboard
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-footnote">
+                Your account, profile, and conversations are securely stored for Peer2Peer.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+
+<main id="dashboardPage" class="app-page" style="display:none;">
+
+    <div class="dashboard-container">
+
+
+        
+
+        <aside class="profile-card card">
+
+            <div class="dashboard-user">
+
+                <div class="dashboard-avatar">
+                    P
+                </div>
+
+                <div>
+
+                    <div class="user-greeting">
+                        Welcome,
+                        <span id="userGreetingName">
+                            User
+                        </span>!
+                    </div>
+
+                    <small>
+                        YOUR PEER PROFILE
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <p class="card-subtitle">
+                Keep your profile updated so Peer2Peer can
+                find better matches.
+            </p>
+
+
+            <form id="profileForm">
+
+
+                <div class="form-group">
+
+                    <label for="profName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profName"
+                        class="form-control"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="profMajor">
+                        Major Program
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profMajor"
+                        class="form-control"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="profSubject">
+                        Core Objective
+                    </label>
+
+                    <select
+                        id="profSubject"
+                        class="form-control"
+                        required>
+
+                        <option>
+                            Java Programming
+                        </option>
+
+                        <option>
+                            Web Development
+                        </option>
+
+                        <option>
+                            Network Engineering
+                        </option>
+
+                        <option>
+                            Mathematics
+                        </option>
+
+                        <option>
+                            Data Structures
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="profSkill">
+                        Top Expertise
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profSkill"
+                        class="form-control"
+                        required
+                        placeholder="e.g. Java, UI Design">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="profStudyMode">
+                        Study Preference
+                    </label>
+
+                    <select
+                        id="profStudyMode"
+                        class="form-control"
+                        required
+                        onchange="toggleModeFields()">
+
+                        <option value="Online">
+                            Online / Remote
+                        </option>
+
+                        <option value="Onsite">
+                            Onsite / Campus
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div
+                    class="form-group"
+                    id="onlineFieldBlock">
+
+                    <label for="profRoomLink">
+                        Virtual Room Link
+                    </label>
+
+                    <input
+                        type="url"
+                        id="profRoomLink"
+                        class="form-control"
+                        placeholder="https://...">
+
+                </div>
+
+
+                <div
+                    class="form-group"
+                    id="onsiteFieldBlock"
+                    style="display:none;">
+
+                    <label for="profLocation">
+                        Campus Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="profLocation"
+                        class="form-control"
+                        placeholder="Library, Floor 3">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="profBio">
+                        About & Context
+                    </label>
+
+                    <textarea
+                        id="profBio"
+                        class="form-control"
+                        rows="3"
+                        required
+                        placeholder="Tell peers what you want to learn...">
+                    </textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Weekly Availability
+                    </label>
+
+                    <div class="schedule-matrix">
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Mon"
+                            data-slot="Morning">
+
+                            Mon AM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Mon"
+                            data-slot="Afternoon">
+
+                            Mon PM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Tue"
+                            data-slot="Morning">
+
+                            Tue AM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Tue"
+                            data-slot="Afternoon">
+
+                            Tue PM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Wed"
+                            data-slot="Morning">
+
+                            Wed AM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Wed"
+                            data-slot="Afternoon">
+
+                            Wed PM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Thu"
+                            data-slot="Morning">
+
+                            Thu AM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Thu"
+                            data-slot="Afternoon">
+
+                            Thu PM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Fri"
+                            data-slot="Morning">
+
+                            Fri AM
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="matrix-cell"
+                            data-day="Fri"
+                            data-slot="Afternoon">
+
+                            Fri PM
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="full-btn">
+
+                    Update My Profile
+
+                </button>
+
+            </form>
+
+        </aside>
+
+
+        
+
+        <section class="network-area">
+
+            <div class="dashboard-header">
+
+                <div>
+
+                    <span class="section-label">
+                        STUDY BUDDY NETWORK
+                    </span>
+
+                    <h1>
+                        Find a study friend.
+                    </h1>
+
+                    <p>
+                        Your BINUS mentor is also a student. Find other students to study with in the list below.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <section id="adminPanel" class="admin-panel is-hidden">
+                <div class="admin-panel-heading">
+                    <div>
+                        <span class="section-label">BINUS ADMIN</span>
+                        <h2>Mentor assignments</h2>
+                    </div>
+                    <p>Designate student mentors, then assign one to a student.</p>
+                </div>
+
+                <div class="admin-tools-grid">
+                    <form id="mentorDesignationForm" class="admin-tool-card">
+                        <h3>Student mentor list</h3>
+                        <label for="mentorCandidateSelect">Student account</label>
+                        <select id="mentorCandidateSelect" class="admin-select" required></select>
+                        <button class="admin-action-btn" type="submit">Add as student mentor</button>
+                    </form>
+
+                    <form id="mentorAssignmentForm" class="admin-tool-card">
+                        <h3>Assign a mentor</h3>
+                        <label for="assignmentStudentSelect">Student to assign</label>
+                        <select id="assignmentStudentSelect" class="admin-select" required></select>
+                        <label for="assignmentMentorSelect">Student mentor</label>
+                        <select id="assignmentMentorSelect" class="admin-select" required></select>
+                        <button class="admin-action-btn" type="submit">Save mentor assignment</button>
+                    </form>
+                </div>
+                <p id="adminStatus" class="admin-status" role="status" aria-live="polite"></p>
+            </section>
+
+
+            <section id="assignedMentorPanel" class="assigned-mentor-panel">
+
+                <div class="assignment-heading">
+                    <div>
+                        <span class="section-label">BINUS SUPPORT</span>
+                        <h2>Your BINUS-assigned student mentor</h2>
+                    </div>
+                    <span class="assignment-status" id="assignedMentorStatus">Not assigned yet</span>
+                </div>
+
+                <div id="assignedMentorContent" class="assigned-mentor-content">
+                    <p>Your mentor will appear here after BINUS records an assignment to your account.</p>
+                </div>
+
+            </section>
+
+
+
+
+
+            <div class="filter-section">
+
+                <label for="filterSubject">
+                        Find study friends by subject
+                </label>
+
+                <select
+                    id="filterSubject"
+                    class="filter-select">
+
+                    <option value="All">
+                        All Active Subjects
+                    </option>
+
+                    <option>
+                        Java Programming
+                    </option>
+
+                    <option>
+                        Web Development
+                    </option>
+
+                    <option>
+                        Network Engineering
+                    </option>
+
+                    <option>
+                        Mathematics
+                    </option>
+
+                    <option>
+                        Data Structures
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                id="buddyList"
+                class="buddy-grid">
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+
+<div
+    id="chatWidget"
+    class="chat-widget"
+    style="display:none;">
+
+    <div class="chat-widget-header">
+
+        <div>
+
+            <button
+                id="chatBackButton"
+                class="chat-back is-hidden"
+                type="button"
+                onclick="showChatInbox()">
+
+                Chats
+
+            </button>
+
+            <small>
+                PEER2PEER CHAT
+            </small>
+
+            <strong id="chatWidgetTargetName">
+                Chatting with...
+            </strong>
+
+        </div>
+
+        <button type="button" onclick="closeChatWidget()" aria-label="Close chat">&times;</button>
+
+    </div>
+
+
+    <div
+        id="chatWidgetBody"
+        class="chat-widget-body">
+    </div>
+
+
+    <form
+        id="chatWidgetForm"
+        class="chat-widget-footer">
+
+        <input
+            type="text"
+            id="chatWidgetInput"
+            placeholder="Write a message..."
+            required
+            autocomplete="off">
+
+        <button type="submit">
+            Send
+        </button>
+
+    </form>
+
+</div>
+
+
+<button
+    id="chatLauncher"
+    class="chat-launcher is-hidden"
+    type="button"
+    onclick="toggleChatInbox()">
+
+    Chats
+
+</button>
+
+
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <strong>
+            Peer2Peer
+        </strong>
+
+        <span>
+            Connect. Learn. Grow.
+        </span>
+
+        <span>
+            &copy; 2026 Peer2Peer
+        </span>
+
+        <button class="support-link" type="button" onclick="showSupportForm()">
+            Contact Support
+        </button>
+
+    </div>
+
+</footer>
+
+
+<dialog id="supportDialog" class="support-dialog" aria-labelledby="supportTitle">
+
+    <div class="support-dialog-header">
+        <div>
+            <span class="section-label">WE'RE HERE TO HELP</span>
+            <h2 id="supportTitle">Contact support</h2>
+        </div>
+        <button class="support-close" type="button" onclick="closeSupportForm()" aria-label="Close support form">&times;</button>
+    </div>
+
+    <form id="supportForm" class="support-form">
+        <label for="supportEmail">Your email</label>
+        <input id="supportEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+
+        <label for="supportTopic">What do you need help with?</label>
+        <select id="supportTopic" name="topic" required>
+            <option value="Account">Account or sign-in</option>
+            <option value="Mentor">Mentor assignment</option>
+            <option value="Study friends">Finding study friends</option>
+            <option value="Other">Something else</option>
+        </select>
+
+        <label for="supportMessage">Message</label>
+        <textarea id="supportMessage" name="message" rows="5" required maxlength="3000" placeholder="Tell us how we can help..."></textarea>
+
+        <p id="supportStatus" class="support-status" role="status" aria-live="polite"></p>
+        <button class="full-btn" type="submit">Send support email</button>
+    </form>
+
+</dialog>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
