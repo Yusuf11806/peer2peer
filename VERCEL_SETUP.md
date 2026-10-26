@@ -23,7 +23,9 @@ After deployment, open `/api/health` on the deployed site. A healthy response re
 
 ## 3. Deploy
 
-Import this repository as a Vercel project with the repository root as the project root. Vercel detects the `api/` function and serves `index.html`, `script.js`, and `style.css` as static assets. No frontend build step is required. Vercel deploys functions from the root `api/` directory without additional routing configuration. [Vercel Functions](https://vercel.com/docs/functions)
+Import this repository as a Vercel project with the repository root as the project root. The selected root must contain `index.html`, `package.json`, `vercel.json`, `api/`, and `lib/`. Keep the Root Directory setting at the repository root; setting it to a nested folder prevents Vercel from seeing the API functions. Vercel detects the `api/` functions and serves `index.html`, `script.js`, and `style.css` as static assets. No frontend build step or custom route rewrite is required. [Vercel Functions](https://vercel.com/docs/functions)
+
+If a deployed `/api/...` URL says the route cannot be found, open **Project Settings → Build and Deployment** and check that **Root Directory** points to the folder containing `api/` (the repository root). Then deploy the latest commit that includes the `api/` and `lib/` folders. After deployment, visit `/api/health`; a JSON response means Vercel found the function. A JSON error about environment variables or the database means routing works and the corresponding project settings still need attention.
 
 For local development, copy `.env.example` to `.env`, fill in real values, install packages with `npm install`, then run `npm run dev`.
 
